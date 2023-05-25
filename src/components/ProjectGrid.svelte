@@ -15,7 +15,8 @@
 			title: 'Google Calendar Bot',
 			image: calendarbot,
 			projectShortName: 'Google Calendar Bot',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+			description:
+				'A bot that automatically adds Twitter spaces events to a shared google calendar as a project for a client in the crypto space. Entries are gathered by querying the twitter api for the entire list of an individuals following list. Then it queries the Twitter API again for twitter spaces that apply to any of the ids found in the following list. Finally, it adds those events to google calendar based on the data returned from Twitter.'
 		},
 		{
 			title: 'Project 3',
@@ -61,10 +62,8 @@
 			}}
 		>
 			<!-- <img src={project.image} alt={project.title} class="w-full h-auto" /> -->
-			<p
-				class="text-white text-3xl rounded-full flex justify-center items-center"
-			>
-				<strong class='mx-2'>{project.projectShortName}</strong>
+			<p class="text-white text-3xl rounded-full flex justify-center items-center">
+				<strong class="mx-2">{project.projectShortName}</strong>
 			</p>
 		</a>
 	{/each}
