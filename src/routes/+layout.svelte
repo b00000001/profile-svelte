@@ -19,23 +19,43 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 <!-- layout.svelte -->
 <script>
 	import '../app.css';
+
+	import { onMount } from 'svelte';
+	import gibhubIcon from '../lib/assets/companylogos/github.svg';
+	import linkedIn from '../lib/assets/companylogos/linkedin.svg';
+	import eMail from '../lib/assets/companylogos/mail.svg';
 </script>
 
 <div class="bg-secondary min-h-screen">
-	<header class="bg-primary shadow-lg fixed top-0 left-0 right-0 z-10">
+	<header class="fixed top-0 left-0 right-0 z-10">
 		<nav class="container mx-auto px-4 py-2 flex justify-between items-center">
-			<a href="/" class="text-lg font-bold text-white hover:text-accent">My Site</a>
+			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas</a>
+			<ul class="flex w-1/3 rounded flex justify-around" style="border-bottom: solid;">
+				<a href="#">
+					<img src={gibhubIcon} alt="Github" class="hover:text-accent" />
+				</a>
+				<a href="#">
+					<img src={linkedIn} alt="LinkedIn" class="hover:text-accent" />
+				</a>
+				<a href="#">
+					<img src={eMail} alt="Email" />
+				</a>
+			</ul>
 			<ul class="flex">
 				<li>
-					<a href="/about" class="text-white hover:text-accent ml-4">About</a>
+					<a href="/about" class="hover:text-accent ml-4 text-xl font-bold">About</a>
 				</li>
 				<li>
-					<a href="/contact" class="text-white hover:text-accent ml-4">Contact</a>
+					<a href="/contact" class="hover:text-accent ml-4 text-xl font-bold">Contact</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main class="container mx-auto px-4 py-8">
+		<div class="scrollbar">
+			<div class="scrollbar-track" />
+			<div class="scrollbar-thumb" />
+		</div>
 		<slot />
 	</main>
 	<footer class="bg-primary text-white py-4">
