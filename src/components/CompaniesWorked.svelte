@@ -6,9 +6,9 @@
 </script>
 
 <div>
-	<div class="text-4xl text-white flex justify-center items-center flex-col">
+	<div class="text-4xl flex justify-center items-center flex-col">
 		<strong class='py-6'>Companies I have worked for</strong>
-		<div class="grid grid-cols-4 gap-6 mb-6 h-full w-full">
+		<div class="grid grid-cols-4 gap-6 h-1/2 w-1/2">
 			<p><img src={ServiceNow} alt='ServiceNow Logo' /></p>
 			<p><img src={Microsoft} alt='ServiceNow Logo' /></p>
 			<p><img src={Starbucks} alt='ServiceNow Logo' /></p>

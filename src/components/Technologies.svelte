@@ -13,21 +13,7 @@
 	import TypeScript from '../lib/assets/companylogos/TypeScript-02.svg';
 </script>
 
-<div class="flex justify-center items-center flex-col">
-	<div class="grid grid-cols-4 gap-6 h-full w-1/2 pt-20">
-		<p><img src={ExpressJS} alt="ExpressJS" /></p>
-		<p><img src={CSS} alt="CSS" /></p>
-		<p><img src={Firebase} alt="Firebase" /></p>
-		<p><img src={GIT} alt="GIT" /></p>
-		<p><img src={HTML} alt="HTML" /></p>
-		<p><img src={JavaScript} alt="JavaScript" /></p>
-		<p><img src={MongoDB} alt="MongoDB" /></p>
-		<p><img src={NodeJS} alt="NodeJS" /></p>
-		<p><img src={ReactJS} alt="ReactJS" /></p>
-		<p><img src={SvelteJS} alt="SvelteJS" /></p>
-		<p><img src={TailwindCSS} alt="TailwindCSS" /></p>
-		<p><img src={TypeScript} alt="TypeScript" /></p>
-	</div>
+<div id="technologiesPage" class="flex justify-center items-center flex-col">
 	<div class="w-11/12 py-4">
 		<div class="flex items-center py-12">
 			<p class="text-xl">+</p>
@@ -61,5 +47,19 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+	<div class="grid grid-cols-4 gap-6 h-full w-1/3 pt-20">
+		<p><img src={ExpressJS} alt="ExpressJS" /></p>
+		<p><img src={CSS} alt="CSS" /></p>
+		<p><img src={Firebase} alt="Firebase" /></p>
+		<p><img src={GIT} alt="GIT" /></p>
+		<p><img src={HTML} alt="HTML" /></p>
+		<p><img src={JavaScript} alt="JavaScript" /></p>
+		<p><img src={MongoDB} alt="MongoDB" /></p>
+		<p><img src={NodeJS} alt="NodeJS" /></p>
+		<p><img src={ReactJS} alt="ReactJS" /></p>
+		<p><img src={SvelteJS} alt="SvelteJS" /></p>
+		<p><img src={TailwindCSS} alt="TailwindCSS" /></p>
+		<p><img src={TypeScript} alt="TypeScript" /></p>
 	</div>
 </div>

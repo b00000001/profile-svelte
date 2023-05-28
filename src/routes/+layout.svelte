@@ -46,9 +46,9 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 
 <div class="bg-primary min-h-screen">
 	<header class="fixed top-0 left-0 right-0 z-10">
-		<nav class="container mx-auto px-4 py-2 flex justify-between items-center">
-			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas</a>
-			<ul id="social-panel" class="flex w-1/4 rounded flex justify-around">
+		<nav class="container mx-auto px-4 py-2 flex justify-between items-center bg-secondary rounded-xl">
+			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas Web Development</a>
+			<ul id="social-panel" class="flex w-1/4 rounded flex justify-around border-2 border-dotted border-highlight">
 				<a href="#">
 					<img src={gibhubIcon} alt="Github" class="hover:text-accent" />
 				</a>
@@ -61,10 +61,7 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 			</ul>
 			<ul class="flex">
 				<li>
-					<a href="/about" class="hover:text-accent ml-4 text-xl font-bold">About</a>
-				</li>
-				<li>
-					<a href="/contact" class="hover:text-accent ml-4 text-xl font-bold">Contact</a>
+					<a href="#technologiesPage" class="hover:text-accent ml-4 text-xl font-bold">About</a>
 				</li>
 			</ul>
 		</nav>
@@ -78,7 +75,7 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 	</main>
 	<footer class="bg-text text-white py-4">
 		<div class="container mx-auto px-4">
-			<p class="text-center text-accent">&copy; 2021 My Site. All rights reserved.</p>
+			<p class="text-center font-bold text-accent">&copy; 2023. All rights reserved.</p>
 		</div>
 	</footer>
 </div>

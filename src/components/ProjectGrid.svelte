@@ -24,24 +24,6 @@
 			projectShortName: 'P',
 			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
-		{
-			title: 'Project 4',
-			image: 'project4.jpg',
-			projectShortName: 'P',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-		},
-		{
-			title: 'Project 5',
-			image: 'project5.jpg',
-			projectShortName: 'P',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-		},
-		{
-			title: 'Project 6',
-			image: 'project6.jpg',
-			projectShortName: 'P',
-			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-		}
 	];
 
 	let selectedProject = null;
@@ -52,6 +34,9 @@
 </script>
 
 <div>
+	<div class='text-2xl font-bold flex'>
+		<p>+</p>
+		<p>Some of my most recent projects.</p></div>
 	<div class="grid grid-cols-3 gap-6 mb-6 border-2">
 		{#each projects as project}
 			<a
@@ -62,7 +47,6 @@
 					selectProject(project);
 				}}
 			>
-				<!-- <img src={project.image} alt={project.title} class="w-full h-auto" /> -->
 				<p class="text-white text-3xl rounded-full flex justify-center items-center my-6">
 					<strong class="mx-2">{project.projectShortName}</strong>
 				</p>
@@ -74,12 +58,12 @@
 {#if selectedProject}
 	<div class="flex items-center">
 		<div class="fixed inset-0 flex items-center justify-center z-20 w-1/2">
-			<div class="bg-white p-8 rounded-lg shadow-lg">
+			<div class="bg-accent p-8 rounded-lg shadow-lg text-text">
 				<h2 class="text-2xl font-bold mb-4">{selectedProject.title}</h2>
 				<img src={selectedProject.image} alt={selectedProject.title} class="w-1/2 h-1/2 mb-4" />
-				<p class="text-gray-700">{selectedProject.description}</p>
+				<p class="text-text">{selectedProject.description}</p>
 				<button
-					class="bg-gray-200 hover:bg-highlight px-4 py-2 rounded-lg mt-4"
+					class="bg-text hover:bg-highlight px-4 py-2 rounded-lg mt-4"
 					on:click={() => {
 						selectedProject = null;
 					}}>Close</button

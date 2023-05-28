@@ -1,7 +1,7 @@
 <!-- ProjectCard.svelte -->
 <template>
     <div class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
-        <div class="bg-white p-8 rounded-lg">
+        <div class="bg-secondary p-8 rounded-lg">
             <h2 class="text-2xl font-bold mb-4">Test</h2>
             <img src="test.png" alt="Test Title" class="w-full h-auto mb-4" />
             <p class="text-gray-700">Test Description</p>

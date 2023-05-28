@@ -7,57 +7,76 @@
 	import Technologies from '../components/Technologies.svelte';
 	let ready = false;
 	let myImageOverlay;
-	let lowerLeftArea;
+	let midLeftArea;
 
 	onMount(() => {
 		ready = true;
 		const infoTab = document.querySelector('#information-tab p');
 		setTimeout(() => {
 			myImageOverlay = document.querySelector('#my-image-overlay');
-			lowerLeftArea = document.querySelector('#lowerLeftarea-overlay');
-			console.log(myImageOverlay);
+			midLeftArea = document.querySelector('#midLeftarea-overlay');
 
 			myImageOverlay?.addEventListener('mouseover', () => {
-				console.log('mouseover');
 				infoTab?.classList.add('active');
-				infoTab.innerText = 'Web Development';
+				infoTab.innerText = 'LinkedIn';
 			});
 			myImageOverlay?.addEventListener('mouseout', () => {
-				console.log('mouseout');
 				infoTab?.classList.remove('active');
 				infoTab.innerText = 'Welcome!';
 			});
-			lowerLeftArea?.addEventListener('mouseover', () => {
-				console.log('mouseover');
+			midLeftArea?.addEventListener('mouseover', () => {
 				infoTab?.classList.add('active');
-				infoTab.innerText = 'Web Development';
+				infoTab.innerText = 'Github';
 			});
-			lowerLeftArea?.addEventListener('mouseout', () => {
-				console.log('mouseout');
+			midLeftArea?.addEventListener('mouseout', () => {
 				infoTab?.classList.remove('active');
 				infoTab.innerText = 'Welcome!';
 			});
 		}, 0);
 	});
 
-	const handleArea1Click = () => {
-		console.log('area1 clicked');
+	const handleArea1Click = (element) => {
+		switch (element) {
+			case 'linkedIn':
+				return () => {
+					window.open('https://www.linkedin.com/in/aaron-deas-0b1b3b1b4/', '_blank');
+				};
+			case 'github':
+				return () => {
+					window.open('https://github.com/b00000001', '_blank');
+				};
+			default:
+				return () => {};
+		}
 	};
 </script>
 
 <!-- +page.svelte -->
 
-<main class="flex flex-col items-center">
+<main class="flex flex-col items-center justify-evenly">
 	<div class="py-4 fixed right-0" id="information-tab">
 		<div class="text-center w-full">
 			<p class="text-2xl font-bold">Welcome!</p>
 		</div>
 	</div>
-	<div class="relative flex justify-center py-20">
+	<div class="relative flex justify-center py-20 flex flex-col">
 		{#if ready}
-			<div id="my-image-overlay" class="area-overlay cursor-pointer" />
-			<div id="lowerLeftarea-overlay" class="lowerLeft-overlay cursor-pointer" />
-			<img src={Webdev} id="hero-webdev" alt="Web Dev" class="object-cover" />
+			<div
+				id="my-image-overlay"
+				class="area-overlay cursor-pointer"
+				on:click={handleArea1Click('linkedIn')}
+			/>
+			<div
+				id="midLeftarea-overlay"
+				class="midLeft-overlay cursor-pointer"
+				on:click={handleArea1Click('github')}
+			/>
+			<figure class='flex flex-col items-center my-3'>
+				<img src={Webdev} id="hero-webdev" alt="Web Dev" class="object-cover" />
+				<figcaption class='text-xs'>Click highlighted portions of the photo.</figcaption>
+			</figure>
+			<div><p class='font-bold text-2xl'>Hello! I am a Full Stack Web Developer leveraging a background in IT to build a more intuitive user experience on the web.</p>
+			</div>
 		{/if}
 	</div>
 	<div class="component-container h-full w-full">
@@ -78,19 +97,19 @@
 	.area-overlay {
 		position: absolute;
 		top: 18%;
-		left: 10.6%;
-		width: 11.6%;
+		left: 21.4%;
+		width: 8.6%;
 		height: 9%;
 		border: 6px dashed #4110c939;
 		transition: border-color 0.4s ease-in-out;
 		border-radius: 4px;
 	}
-	.lowerLeft-overlay {
+	.midLeft-overlay {
 		position: absolute;
-		top: 60.8%;
-		left: 8%;
-		width: 15%;
-		height: 4.4%;		
+		top: 33.7%;
+		left: 18%;
+		width: 14%;
+		height: 16.8%;
 		transition: border-color 0.4s ease-in-out;
 		border-radius: 4px;
 		border: 6px dashed #4110c939;
@@ -99,14 +118,14 @@
 	.area-overlay:hover {
 		border-color: #60ff9a94;
 	}
-	.lowerLeft-overlay:hover {
+	.midLeft-overlay:hover {
 		border-color: #60ff9a94;
 	}
 	#information-tab {
 		z-index: 9999;
-		top: 34.6%;
+		top: 35.6%;
 		left: 52%;
-		height: 7.5%;
+		height: 7.7%;
 		width: 12.2%;
 	}
 </style>
