@@ -71,7 +71,7 @@
 				class="midLeft-overlay cursor-pointer"
 				on:click={handleArea1Click('github')}
 			/>
-			<figure class='flex flex-col items-center my-3'>
+			<figure class='flex flex-col items-center mb-10'>
 				<img src={Webdev} id="hero-webdev" alt="Web Dev" class="object-cover" />
 				<figcaption class='text-xs'>Click highlighted portions of the photo.</figcaption>
 			</figure>
@@ -96,7 +96,7 @@
 	}
 	.area-overlay {
 		position: absolute;
-		top: 18%;
+		top: 16%;
 		left: 21.4%;
 		width: 8.6%;
 		height: 9%;
@@ -106,7 +106,7 @@
 	}
 	.midLeft-overlay {
 		position: absolute;
-		top: 33.7%;
+		top: 31.3%;
 		left: 18%;
 		width: 14%;
 		height: 16.8%;
@@ -123,7 +123,7 @@
 	}
 	#information-tab {
 		z-index: 9999;
-		top: 35.6%;
+		top: 34.6%;
 		left: 52%;
 		height: 7.7%;
 		width: 12.2%;

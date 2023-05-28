@@ -44,7 +44,7 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 	}
 </script>
 
-<div class="bg-primary min-h-screen">
+<div class="bg-white min-h-screen">
 	<header class="fixed top-0 left-0 right-0 z-10">
 		<nav class="container mx-auto px-4 py-2 flex justify-between items-center bg-secondary rounded-xl">
 			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas Web Development</a>
