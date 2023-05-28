@@ -22,3 +22,34 @@
     background-color: #787878;
     border-radius: 10px;
 }
+
+#social-panel {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
+
+#social-panel.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+}
+
+/* #information-tab p {
+    display: none;
+} */
+
+#information-tab p.active {
+    display: block;
+}
+#social-panel {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #social-panel.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+  }

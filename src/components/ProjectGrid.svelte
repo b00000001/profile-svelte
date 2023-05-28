@@ -51,22 +51,24 @@
 	}
 </script>
 
-<div class="grid grid-cols-3 gap-6 mb-6">
-	{#each projects as project}
-		<a
-			href="#"
-			class="bg-primary hover:bg-highlight p-4 rounded-lg relative flex justify-center items-center"
-			on:click={(e) => {
-				e.preventDefault();
-				selectProject(project);
-			}}
-		>
-			<!-- <img src={project.image} alt={project.title} class="w-full h-auto" /> -->
-			<p class="text-white text-3xl rounded-full flex justify-center items-center">
-				<strong class="mx-2">{project.projectShortName}</strong>
-			</p>
-		</a>
-	{/each}
+<div>
+	<div class="grid grid-cols-3 gap-6 mb-6 border-2">
+		{#each projects as project}
+			<a
+				href="#"
+				class="bg-accent hover:bg-highlight p-4 rounded-lg relative flex justify-center items-center"
+				on:click={(e) => {
+					e.preventDefault();
+					selectProject(project);
+				}}
+			>
+				<!-- <img src={project.image} alt={project.title} class="w-full h-auto" /> -->
+				<p class="text-white text-3xl rounded-full flex justify-center items-center my-6">
+					<strong class="mx-2">{project.projectShortName}</strong>
+				</p>
+			</a>
+		{/each}
+	</div>
 </div>
 
 {#if selectedProject}

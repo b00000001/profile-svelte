@@ -24,13 +24,31 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 	import gibhubIcon from '../lib/assets/companylogos/github.svg';
 	import linkedIn from '../lib/assets/companylogos/linkedin.svg';
 	import eMail from '../lib/assets/companylogos/mail.svg';
+	let socialPanel;
+	let infoTab;
+
+	onMount(() => {
+		socialPanel = document.getElementById('social-panel');
+		infoTab = document.querySelector('#information-tab p');
+		window.addEventListener('scroll', handleScroll);
+	});
+
+	function handleScroll() {
+		if (window.pageYOffset > 0) {
+			socialPanel.classList.add('hidden');
+			infoTab.classList.add('hidden');
+		} else {
+			socialPanel.classList.remove('hidden');
+			infoTab.classList.remove('hidden');
+		}
+	}
 </script>
 
-<div class="bg-secondary min-h-screen">
+<div class="bg-primary min-h-screen">
 	<header class="fixed top-0 left-0 right-0 z-10">
 		<nav class="container mx-auto px-4 py-2 flex justify-between items-center">
 			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas</a>
-			<ul class="flex w-1/3 rounded flex justify-around" style="border-bottom: solid;">
+			<ul id="social-panel" class="flex w-1/4 rounded flex justify-around">
 				<a href="#">
 					<img src={gibhubIcon} alt="Github" class="hover:text-accent" />
 				</a>
@@ -58,9 +76,23 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 		</div>
 		<slot />
 	</main>
-	<footer class="bg-primary text-white py-4">
+	<footer class="bg-text text-white py-4">
 		<div class="container mx-auto px-4">
-			<p class="text-center">&copy; 2021 My Site. All rights reserved.</p>
+			<p class="text-center text-accent">&copy; 2021 My Site. All rights reserved.</p>
 		</div>
 	</footer>
 </div>
+
+<style>
+	#social-panel {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.5s ease-in-out;
+	}
+
+	#social-panel.hidden {
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0.8);
+	}
+</style>
