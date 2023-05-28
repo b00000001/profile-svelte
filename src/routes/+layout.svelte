@@ -66,7 +66,7 @@ Use bold typography: Bold typography is a great way to make your page stand out.
 			</ul>
 		</nav>
 	</header>
-	<main class="container mx-auto px-4 py-8">
+	<main class="container mx-auto">
 		<div class="scrollbar">
 			<div class="scrollbar-track" />
 			<div class="scrollbar-thumb" />

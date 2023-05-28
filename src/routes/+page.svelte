@@ -85,7 +85,7 @@
 	<div class="component-container h-full w-full">
 		<ProjectGrid />
 	</div>
-	<div class="component-container h-full w-full">
+	<div class="component-container h-full w-full pt-20">
 		<CompaniesWorked />
 	</div>
 </main>
