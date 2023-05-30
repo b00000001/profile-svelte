@@ -1,10 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
-	import { afterUpdate } from 'svelte';
-	import CompaniesWorked from '../components/CompaniesWorked.svelte';
-	import ProjectGrid from '../components/ProjectGrid.svelte';
-	import Webdev from '../lib/assets/webdev.jpg';
 	import Technologies from '../components/Technologies.svelte';
+	import Webdev from '../lib/assets/webdev.jpg';
+	import ProjectGrid from '../components/ProjectGrid.svelte';
+	import CompaniesWorked from '../components/CompaniesWorked.svelte';
 	let ready = false;
 	let myImageOverlay;
 	let midLeftArea;
@@ -71,11 +70,15 @@
 				class="midLeft-overlay cursor-pointer"
 				on:click={handleArea1Click('github')}
 			/>
-			<figure class='flex flex-col items-center mb-10'>
+			<figure class="flex flex-col items-center mb-10">
 				<img src={Webdev} id="hero-webdev" alt="Web Dev" class="object-cover" />
-				<figcaption class='text-xs'>Click highlighted portions of the photo.</figcaption>
+				<figcaption class="text-xs">Click highlighted portions of the photo.</figcaption>
 			</figure>
-			<div><p class='font-bold text-2xl'>Hello! I am a Full Stack Web Developer leveraging a background in IT to build a more intuitive user experience on the web.</p>
+			<div>
+				<p class="font-bold text-2xl">
+					Hello! I am a Full Stack Web Developer leveraging a background in IT to build a more
+					intuitive user experience on the web.
+				</p>
 			</div>
 		{/if}
 	</div>
@@ -92,7 +95,7 @@
 
 <style>
 	.component-container {
-		margin-bottom: 50vh;
+		margin-bottom: 10vh;
 	}
 	.area-overlay {
 		position: absolute;
@@ -123,7 +126,7 @@
 	}
 	#information-tab {
 		z-index: 9999;
-		top: 34.6%;
+		top: 31.07%;
 		left: 52%;
 		height: 7.7%;
 		width: 12.2%;

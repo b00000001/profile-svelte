@@ -48,7 +48,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid grid-cols-4 gap-6 h-full w-1/3 pt-20">
+	<div class="grid grid-cols-4 gap-6 h-full w-1/3 pt-20 bg-secondary rounded-full
+	">
 		<p><img src={ExpressJS} alt="ExpressJS" /></p>
 		<p><img src={CSS} alt="CSS" /></p>
 		<p><img src={Firebase} alt="Firebase" /></p>
