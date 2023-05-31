@@ -16,7 +16,7 @@
 			<p><img src={Starbucks} alt="ServiceNow Logo" /></p>
 			<p><img src={WellsFargo} alt="ServiceNow Logo" /></p>
 		</div>
-		<div class='mt-12'>
+		<div class='mt-20'>
 			<a
 				on:click={() => (openAbout = !openAbout)}
 				class="bg-accent text-primary font-bold hover:bg-highlight px-4 py-2 rounded-lg"
@@ -26,7 +26,7 @@
 		{#if openAbout}
 			<div class="flex items-center">
 				<div class="fixed inset-0 flex items-center justify-center z-20 w-1/2">
-					<div class="bg-accent p-8 rounded-lg shadow-lg text-text flex flex-col">
+					<div class="bg-accent p-8 rounded-lg shadow-lg text-text flex flex-col w-1/2">
 						<p>+</p>
 						<p>
 							I have achieved a certification in Full Stack Development from the University of North

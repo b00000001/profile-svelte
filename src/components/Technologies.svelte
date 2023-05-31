@@ -48,19 +48,23 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid grid-cols-4 gap-6 h-full w-1/3 pt-20 bg-secondary rounded-full
-	">
-		<p><img src={ExpressJS} alt="ExpressJS" /></p>
-		<p><img src={CSS} alt="CSS" /></p>
-		<p><img src={Firebase} alt="Firebase" /></p>
-		<p><img src={GIT} alt="GIT" /></p>
-		<p><img src={HTML} alt="HTML" /></p>
-		<p><img src={JavaScript} alt="JavaScript" /></p>
-		<p><img src={MongoDB} alt="MongoDB" /></p>
-		<p><img src={NodeJS} alt="NodeJS" /></p>
-		<p><img src={ReactJS} alt="ReactJS" /></p>
-		<p><img src={SvelteJS} alt="SvelteJS" /></p>
-		<p><img src={TailwindCSS} alt="TailwindCSS" /></p>
-		<p><img src={TypeScript} alt="TypeScript" /></p>
+	<div class='w-full h-full flex justify-center items-center m-10'>
+		<div
+			class="grid grid-cols-4 gap-6 h-full w-1/3 border-2 rounded-full bg-secondary
+	"
+		>
+			<p><img src={ExpressJS} alt="ExpressJS" /></p>
+			<p><img src={CSS} alt="CSS" /></p>
+			<p><img src={Firebase} alt="Firebase" /></p>
+			<p><img src={GIT} alt="GIT" /></p>
+			<p><img src={HTML} alt="HTML" /></p>
+			<p><img src={JavaScript} alt="JavaScript" /></p>
+			<p><img src={MongoDB} alt="MongoDB" /></p>
+			<p><img src={NodeJS} alt="NodeJS" /></p>
+			<p><img src={ReactJS} alt="ReactJS" /></p>
+			<p><img src={SvelteJS} alt="SvelteJS" /></p>
+			<p><img src={TailwindCSS} alt="TailwindCSS" /></p>
+			<p><img src={TypeScript} alt="TypeScript" /></p>
+		</div>
 	</div>
 </div>

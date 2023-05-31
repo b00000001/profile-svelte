@@ -30,7 +30,7 @@
 	<div class="social-media-bar h-11/12">
 		<ul
 			id="social-panel"
-			class="flex flex-col rounded flex justify-around border-2 bg-secondary rounded-2xl border-black mx-2"
+			class="flex flex-col rounded flex justify-around border-2 bg-secondary rounded-2xl border-text mx-2"
 		>
 			<a href="#" class="mx-2 my-2">
 				<img src={gibhubIcon} alt="Github" class="hover:bg-accent rounded-md" />
@@ -45,9 +45,9 @@
 	</div>
 	<header class="fixed top-0 left-0 right-0 z-10">
 		<nav
-			class="container mx-auto px-4 py-2 flex justify-between items-center bg-secondary rounded-xl border-2 border-black"
+			class="container mx-auto px-4 py-2 flex justify-between items-center bg-secondary rounded-b-lg border-2 border-text" 
 		>
-			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas Web Development</a>
+			<a href="/" class="text-2xl font-bold hover:text-accent">Aaron Deas</a>
 			<ul class="flex">
 				<li>
 					<a href="#aboutMe" class="hover:text-accent ml-4 text-xl font-bold">About</a>
@@ -62,7 +62,7 @@
 		</div>
 		<slot />
 	</main>
-	<footer class="bg-text text-white py-4 border-2 border-black">
+	<footer class="bg-secondary text-white py-4 border-2 border-text">
 		<div class="container mx-auto px-4">
 			<p class="text-center font-bold text-accent">&copy; 2023. All rights reserved.</p>
 		</div>
